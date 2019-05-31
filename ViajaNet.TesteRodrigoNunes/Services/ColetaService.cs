@@ -24,10 +24,10 @@ namespace ViajaNet.TesteRodrigoNunes.Services
         {
             var factory = new ConnectionFactory()
             {
-                HostName = "52.161.12.37",
+                HostName = "",
                 Port = 5672,
-                UserName = "user1",
-                Password = "Lorena2811"
+                UserName = "",
+                Password = ""
             };
             using (var connection = factory.CreateConnection())
             using (var channel = connection.CreateModel())

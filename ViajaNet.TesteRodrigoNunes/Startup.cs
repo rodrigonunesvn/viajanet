@@ -25,9 +25,9 @@ namespace ViajaNet.TesteRodrigoNunes
             services.AddScoped<IColetaService, ColetaService>();
             services.AddCouchbase(client =>
             {
-                client.Servers = new List<Uri> { new Uri("http://52.161.12.37:8091") };
-                client.Username = "Administrator";
-                client.Password = "Lorena2811";
+                client.Servers = new List<Uri> { new Uri("http://:8091") };
+                client.Username = "";
+                client.Password = "";
                 client.UseSsl = false;
             });
         }
