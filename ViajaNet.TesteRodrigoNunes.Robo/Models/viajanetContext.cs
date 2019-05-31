@@ -21,7 +21,7 @@ namespace ViajaNet.TesteRodrigoNunes.Robo.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=viajanet.database.windows.net;Database=viajanet;User ID=viajanet; Password=Lorena2811;");
+                optionsBuilder.UseSqlServer("");
             }
         }
 

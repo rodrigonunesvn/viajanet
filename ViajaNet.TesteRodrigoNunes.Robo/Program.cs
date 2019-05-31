@@ -18,19 +18,19 @@ namespace ViajaNet.TesteRodrigoNunes.Robo
         {
             Console.WriteLine("Iniciando leitura da fila...");
 
-            var couchbaseServer = "http://52.161.12.37:8091";
+            var couchbaseServer = "http://:8091";
             ClusterHelper.Initialize(new ClientConfiguration
             {
                 Servers = new List<Uri> { new Uri(couchbaseServer) }
-            }, new PasswordAuthenticator("Administrator", "Lorena2811"));
+            }, new PasswordAuthenticator("", ""));
 
             var _bucket = ClusterHelper.GetBucket("Coleta");            
             var factory = new ConnectionFactory()
             {
-                HostName = "52.161.12.37",
+                HostName = "",
                 Port = 5672,
-                UserName = "user1",
-                Password = "Lorena2811"
+                UserName = "",
+                Password = ""
             };
 
             using (var dbContext = new viajanetContext())
